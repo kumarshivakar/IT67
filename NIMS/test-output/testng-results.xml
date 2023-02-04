@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[testCreateCustomer]]>
     </line>
+    <line>
+      <![CDATA[testDeleteCustomer]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-01-21T12:56:06 IST" name="Default suite" finished-at="2023-01-21T12:57:09 IST" duration-ms="63467">
+  <suite started-at="2023-02-05T01:36:21 IST" name="Default suite" finished-at="2023-02-05T01:37:38 IST" duration-ms="76731">
     <groups>
     </groups>
-    <test started-at="2023-01-21T12:56:06 IST" name="Default test" finished-at="2023-01-21T12:57:09 IST" duration-ms="63467">
+    <test started-at="2023-02-05T01:36:21 IST" name="Default test" finished-at="2023-02-05T01:37:38 IST" duration-ms="76731">
       <class name="in.nims.testscript.CustomerModule">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:in.nims.testscript.CustomerModule@3bf9ce3e]" started-at="2023-01-21T12:56:06 IST" name="openBrowser" finished-at="2023-01-21T12:56:51 IST" duration-ms="44951" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:36:21 IST" name="openBrowser" finished-at="2023-02-05T01:36:28 IST" duration-ms="6652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:in.nims.testscript.CustomerModule@3bf9ce3e]" started-at="2023-01-21T12:56:51 IST" name="login" finished-at="2023-01-21T12:56:51 IST" duration-ms="743" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:36:28 IST" name="login" finished-at="2023-02-05T01:36:40 IST" duration-ms="12464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="testCreateCustomer()[pri:0, instance:in.nims.testscript.CustomerModule@3bf9ce3e]" started-at="2023-01-21T12:56:51 IST" name="testCreateCustomer" finished-at="2023-01-21T12:56:51 IST" duration-ms="41" status="PASS">
+        <test-method signature="testCreateCustomer()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:36:40 IST" name="testCreateCustomer" finished-at="2023-02-05T01:37:06 IST" duration-ms="25875" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testCreateCustomer]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCreateCustomer -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:in.nims.testscript.CustomerModule@3bf9ce3e]" started-at="2023-01-21T12:56:51 IST" name="logout" finished-at="2023-01-21T12:57:08 IST" duration-ms="16850" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:37:06 IST" name="logout" finished-at="2023-02-05T01:37:10 IST" duration-ms="3506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:in.nims.testscript.CustomerModule@3bf9ce3e]" started-at="2023-01-21T12:57:08 IST" name="closeBrowser" finished-at="2023-01-21T12:57:09 IST" duration-ms="781" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:37:10 IST" name="login" finished-at="2023-02-05T01:37:14 IST" duration-ms="4460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testDeleteCustomer()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:37:14 IST" name="testDeleteCustomer" finished-at="2023-02-05T01:37:30 IST" duration-ms="16347" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[testDeleteCustomer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDeleteCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:37:30 IST" name="logout" finished-at="2023-02-05T01:37:36 IST" duration-ms="5648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:in.nims.testscript.CustomerModule@5562c41e]" started-at="2023-02-05T01:37:36 IST" name="closeBrowser" finished-at="2023-02-05T01:37:38 IST" duration-ms="1661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -14,10 +14,7 @@ public class LoginPage {
 	
 	@FindBy(xpath="//div[text()='Login ']")
 	private WebElement lgbtn;
-	
-	@FindBy(id="logoutLink")
-	private WebElement lgoutbtn;
-	
+		
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -25,9 +22,5 @@ public class LoginPage {
 		untbx.sendKeys(un);
 		pwtbx.sendKeys(pw);
 		lgbtn.click();
-	}
-	public void setLogout() {
-		
-		lgoutbtn.click();
 	}
 }

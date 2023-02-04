@@ -10,6 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import in.nims.pom.HomePage;
 import in.nims.pom.LoginPage;
 
 public class BaseClass {
@@ -23,22 +24,21 @@ public class BaseClass {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		FileLib fl=new FileLib();
-		String url=fl.getPropertyData("url");
-		driver.get(url);
 	}
 	@BeforeMethod
 	public void login()throws IOException {
-		LoginPage lp=new LoginPage(driver);
 		FileLib fl=new FileLib();
+		String url=fl.getPropertyData("url");
+		driver.get(url);
+		LoginPage lp=new LoginPage(driver);
 		String un=fl.getPropertyData("username");
 		String pw=fl.getPropertyData("password");
 		lp.setLogin(un, pw);		
 	}
 	@AfterMethod
-	public void logout() {
-		LoginPage lp=new LoginPage(driver);
-		lp.setLogout();
+	public void logout(){
+		HomePage hp=new HomePage(driver);
+		hp.setLogout();
 	}
 	@AfterTest
 	public void closeBrowser() {

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SHIVAKAR\AppData\Local\Temp\testng-eclipse-111036037\testng-customsuite.xml</span>
+                    <span>C:\Users\SHIVAKAR\AppData\Local\Temp\testng-eclipse--1215365630\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="in.nims.testscript.CustomerModule" class="method navigator-link" hash-for-method="testCreateCustomer">testCreateCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="in.nims.testscript.CustomerModule" class="method navigator-link" hash-for-method="testDeleteCustomer">testDeleteCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,12 +137,19 @@
                   <span class="method-name">testCreateCustomer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteCustomer">
+                  </a> <!-- testDeleteCustomer -->
+                  <span class="method-name">testDeleteCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SHIVAKAR\AppData\Local\Temp\testng-eclipse-111036037\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SHIVAKAR\AppData\Local\Temp\testng-eclipse--1215365630\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateCustomer')
 data.setCell(0, 2, 'in.nims.testscript.CustomerModule')
-data.setCell(0, 3, 41);
+data.setCell(0, 3, 25875);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDeleteCustomer')
+data.setCell(1, 2, 'in.nims.testscript.CustomerModule')
+data.setCell(1, 3, 16347);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 ms</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,6 +226,12 @@ return data;
               <span class="reporter-method-name">testCreateCustomer</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">testCreateCustomer</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDeleteCustomer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">testDeleteCustomer</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,19 +256,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">45016 ms</span>
+                <span class="method-start">6738 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateCustomer</span>
-                <span class="method-start">45761 ms</span>
+                <span class="method-start">19203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">45819 ms</span>
+                <span class="method-start">45093 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">48600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteCustomer</span>
+                <span class="method-start">53060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logout</span>
+                <span class="method-start">69411 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">62674 ms</span>
+                <span class="method-start">75062 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,10 +5,10 @@
     <classes>
       <class name="in.nims.testscript.CustomerModule">
         <methods>
+          <include name="testDeleteCustomer"/>
           <include name="login"/>
           <include name="openBrowser"/>
           <include name="logout"/>
-          <include name="testCreateCustomer"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- in.nims.testscript.CustomerModule -->
