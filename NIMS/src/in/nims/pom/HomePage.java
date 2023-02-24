@@ -1,5 +1,6 @@
 package in.nims.pom;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,15 @@ public class HomePage {
 		taskbtn.click();
 	}
 	public void setLogout() {
-		lgoutbtn.click();
+		int i=0;
+		while(i<100) {
+			try {
+				lgoutbtn.click();
+				break;
+			}
+			catch(ElementClickInterceptedException e) {
+				i++;
+			}
+		}
 	}
-
 }

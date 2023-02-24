@@ -3,7 +3,11 @@ package in.nims.testscript;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
@@ -33,9 +37,13 @@ public class CustomerModule extends BaseClass {
 		tlp.getCstmrclk().sendKeys("our");
 		tlp.getSelectourcompny().click();
 		tlp.getCreatecstmrbtn().click();
-		Thread.sleep(5000);
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.textToBePresentInElement(tlp.getActualcustomer(),custnm));
+		String actualText = tlp.getActualcustomer().getText();
+		Assert.assertEquals(actualText, custnm);
 		//Assert.fail();
 	}
+	
 	@Test
 	public void testDeleteCustomer() {
 		Reporter.log("testDeleteCustomer",true);
@@ -44,7 +52,16 @@ public class CustomerModule extends BaseClass {
 		TaskListPage tlp=new TaskListPage(driver);
 //		tlp.getHdfc().click();
 		tlp.getEditbtn().click();
-		tlp.getActionbtn().click();
+		int i=0;
+		while(i<100) {
+				try {
+					tlp.getActionbtn().click();
+					break;
+				}
+				catch(ElementClickInterceptedException e) {
+					i++;
+				}
+		}
 		tlp.getDeletebtn().click();
 		tlp.getDeletepermanentlybtn().click();
 	}

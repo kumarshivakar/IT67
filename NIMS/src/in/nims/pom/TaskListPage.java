@@ -30,10 +30,13 @@ public class TaskListPage {
 	@FindBy(xpath="//div[text()='Create Customer']")
 	private WebElement createcstmrbtn;
 	
+	@FindBy(xpath="//div[@class='titleEditButtonContainer']/div[@class='title']")
+	private WebElement actualCustomer;
+	
 	@FindBy(xpath="(//div[text()='HDFC-001'])[1]")
 	private WebElement hdfc;
 	
-	@FindBy(xpath="//div[text()='HDFC-001']/../div[2]")
+	@FindBy(xpath="//div[@class='titleEditButtonContainer']/div[@class='editButton']")
 	private WebElement editbtn;
 	
 	@FindBy(xpath="(//div[@class='action'])[1]")
@@ -82,6 +85,10 @@ public class TaskListPage {
 
 	public WebElement getCreatecstmrbtn() {
 		return createcstmrbtn;
+	}
+	
+	public WebElement getActualcustomer() {
+		return actualCustomer;
 	}
 	
 	public WebElement getHdfc() {
